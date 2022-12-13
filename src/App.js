@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-
+import StudentLogin from './components/students/Student_login';
+import StudentSignUp from './components/students/Student_signUp';
+import StudentEdit from './components/students/StudentEdit';
+import StudentQuery from './components/students/StudentQuery';
+import TeacherLogin from './components/teacher/TeacherLogin';
+import TeacherSignup from './components/teacher/TeacherSignup';
+import TeacherEdit from './components/teacher/TeacherEdit';
+import TeacherQuery from './components/teacher/TeacherQuery';
+import Home from './components/Home';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home/>
+      <StudentLogin />
+      <StudentSignUp />
+      <StudentEdit />
+      <StudentQuery />
+      <TeacherLogin />
+      <TeacherSignup />
+      <TeacherEdit />
+      <TeacherQuery/>
     </div>
   );
 }
