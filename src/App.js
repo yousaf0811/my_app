@@ -9,6 +9,8 @@ import TeacherSignup from './components/teacher/TeacherSignup';
 import TeacherEdit from './components/teacher/TeacherEdit';
 import TeacherQuery from './components/teacher/TeacherQuery';
 import StudentAccount from './components/students/StudentAccount';
+import TeacherAccount from './components/teacher/TeacherAccount';
+import Admin from './components/admin/Admin';
 import Home from './components/Home';
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
       <BrowserRouter>
       <Routes>
       <Route path="/" element={<Home/> } />
+      <Route path="/admin" element={<Admin/> } />
       <Route path="/studentlogin" element={<StudentLogin/> } />
       <Route path="/studentsignup" element={<StudentSignUp/> } />
       <Route path="/studentaccount" element={<StudentAccount/> } />
@@ -25,6 +28,7 @@ function App() {
       <Route path="/teachersignup" element={<TeacherSignup/> } />
       <Route path="/teacherEdit" element={<TeacherEdit/> } />
       <Route path="/teacherquery" element={<TeacherQuery/> } />
+      <Route path="/teacherAccount" element={<TeacherAccount/> } />
       </Routes>
       </BrowserRouter>
     </div>
