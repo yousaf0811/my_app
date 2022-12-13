@@ -27,12 +27,12 @@
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
   }
-  to {
-    transform: rotate(360deg);
+  .card-registration .select-arrow {
+  top: 13px;
   }
-}
