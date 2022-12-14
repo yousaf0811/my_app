@@ -19,7 +19,7 @@ const StudentLogin = () => {
           if (userData.password !== password.value) {
             alert("Invalid password");
           } else {
-            localStorage.setItem("name", JSON.stringify(userData.name));
+            localStorage.setItem("name", JSON.stringify(userData.firstName));
             localStorage.setItem("id", JSON.stringify(userData.id));
             handleClick();
           }
@@ -32,15 +32,6 @@ const StudentLogin = () => {
           return false;
         }
       };
-
-
-
-
-
-
-
-
-
     useEffect(() => {
         let localData = localStorage.getItem("name");
         // console.log("Data :: ", localData);
@@ -48,8 +39,6 @@ const StudentLogin = () => {
           .then((resp) => resp.json())
           .then((info) => setDatabase(info));
       }, []);
-
-
     return (
         <div>
             <h1>Student_login</h1>

@@ -12,6 +12,7 @@ import StudentAccount from './components/students/StudentAccount';
 import TeacherAccount from './components/teacher/TeacherAccount';
 import Admin from './components/admin/Admin';
 import Home from './components/Home';
+import Auth from './components/Auth';
 function App() {
   return (
     <div className="App">
@@ -21,14 +22,14 @@ function App() {
       <Route path="/admin" element={<Admin/> } />
       <Route path="/studentlogin" element={<StudentLogin/> } />
       <Route path="/studentsignup" element={<StudentSignUp/> } />
-      <Route path="/studentaccount" element={<StudentAccount/> } />
+      <Route path="/studentaccount" element={<Auth><StudentAccount/></Auth> } />
       <Route path="/studentEdit" element={<StudentEdit/> } />
       <Route path="/studentquery" element={<StudentQuery/> } />
       <Route path="/teacherlogin" element={<TeacherLogin/> } />
       <Route path="/teachersignup" element={<TeacherSignup/> } />
       <Route path="/teacherEdit" element={<TeacherEdit/> } />
       <Route path="/teacherquery" element={<TeacherQuery/> } />
-      <Route path="/teacherAccount" element={<TeacherAccount/> } />
+      <Route path="/teacherAccount" element={<Auth><TeacherAccount/></Auth> } />
       </Routes>
       </BrowserRouter>
     </div>

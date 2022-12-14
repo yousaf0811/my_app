@@ -1,8 +1,116 @@
 import { useNavigate } from "react-router-dom"
+import { useState } from "react"
 
 const TeacherSignup = () => {
     const navigate = useNavigate();
+    const [title, setTitle] = useState(null);
+    const [firstName, setFirstName] = useState(null);
+    const [lastName, setLastName] = useState(null);
+    const [fatherName, setFatherName] = useState(null);
+    const [gender, setGender] = useState(null);
+    const [experience, setExperience] = useState(null);
+    const [aboutExperience, setAboutExperience] = useState(null);
+    const [details, setDetails] = useState(null);
+    const [password, setPassword] = useState(null);
+    const [address, setAddress] = useState(null);
+    const [additionalInformation, setAdditionalInformation] = useState(null);
+    const [country, setCountry] = useState(null);
+    const [city, setCity] = useState(null);
+    const [skypeId, setSkypeId] = useState(null);
+    const [dob, setDob] = useState(null);
+    const [number, setNumber] = useState(null);
+    // const [course, setCourse] = useState(null);
+    const [email, setEmail] = useState(null);
 
+    const handleInputChange = (e) => {
+        const { id, value } = e.target;
+        if (id === "title") {
+            setTitle(value);
+          }
+        if (id === "firstName") {
+          setFirstName(value);
+        }
+        if (id === "lastName") {
+            setLastName(value);
+          }
+        if (id === "fatherName") {
+          setFatherName(value);
+        }
+        if(id === "experience"){
+            setExperience(value);
+        }
+        if(id === "boutExperience"){
+            setAboutExperience(value);
+        }
+        if(id === "details"){
+            setDetails(value);
+        }
+        if(id === "password"){
+            setPassword(value);
+        }
+        if(id === "address"){
+            setAddress(value);
+        }
+        if(id === "additionalInformation"){
+            setAdditionalInformation(value);
+        }
+        if(id === "country"){
+            setCountry(value);
+        }
+        if(id === "city"){
+            setCity(value);
+        }
+        if(id === "gender"){
+            setGender(value);
+
+        if(id === "skypeId"){
+            setSkypeId(value);
+        }        }
+        if(id === "dob"){
+            setDob(value);
+        }
+         if(id === "number"){
+             setNumber(value);
+         }
+        if(id === "email"){
+            setEmail(value);
+        }    
+    };
+
+
+    const handleClick = () => {
+        navigate('/teacherAccount')};
+      const handleSubmit = () => {
+        // console.log(name);
+        if(!firstName ) { alert('Fill the empty input fields');  return false}; 
+        const user = {
+            title,
+            firstName,
+            lastName,
+            fatherName,
+            gender,
+            experience,
+            aboutExperience,
+            details,
+            password,
+            additionalInformation,
+            country,
+            city,
+            skypeId,
+            dob,
+            number,
+            address,
+            email,
+        }
+    localStorage.setItem('name', JSON.stringify(user.name));
+        fetch('http://localhost:3010/teachers',{
+            method : "POST",
+            headers : {
+                "Content-Type" : "application/json"
+            },
+            body : JSON.stringify(user)
+        }).then(resp => resp.json()).then(info => handleClick() );
+      };
     return (
         <div>
             <h1>Teacher_Signup</h1>
@@ -30,7 +138,7 @@ const TeacherSignup = () => {
                                                     <div class="col-md-6 mb-4 pb-2">
 
                                                         <div class="form-outline">
-                                                            <input type="text" id="firstName" class="form-control form-control-lg" />
+                                                            <input onChange={(e) => handleInputChange(e)} type="text" id="firstName" class="form-control form-control-lg" />
                                                             <label class="form-label" for="firstName">First name</label>
                                                         </div>
 
@@ -38,7 +146,7 @@ const TeacherSignup = () => {
                                                     <div class="col-md-6 mb-4 pb-2">
 
                                                         <div class="form-outline">
-                                                            <input type="text" id="lastName" class="form-control form-control-lg" />
+                                                            <input onChange={(e) => handleInputChange(e)} type="text" id="lastName" class="form-control form-control-lg" />
                                                             <label class="form-label" for="lastName">Last name</label>
                                                         </div>
 
@@ -46,8 +154,14 @@ const TeacherSignup = () => {
                                                 </div>
                                                 <div class="mb-4 pb-2">
                                                     <div class="form-outline">
-                                                        <input type="text" id="fatherName" class="form-control form-control-lg" />
+                                                        <input onChange={(e) => handleInputChange(e)} type="text" id="fatherName" class="form-control form-control-lg" />
                                                         <label class="form-label" for="fatherName">Father Name</label>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-4 pb-2">
+                                                    <div class="form-outline">
+                                                        <input onChange={(e) => handleInputChange(e)} type="text" id="gender" class="form-control form-control-lg" />
+                                                        <label class="form-label" for="gender">Gender</label>
                                                     </div>
                                                 </div>
 
@@ -65,24 +179,24 @@ const TeacherSignup = () => {
 
                                                 <div class="mb-4 pb-2">
                                                     <div class="form-outline">
-                                                        <input type="text" id="boutExperience" class="form-control form-control-lg" />
+                                                        <input onChange={(e) => handleInputChange(e)} type="text" id="boutExperience" class="form-control form-control-lg" />
                                                         <label class="form-label" for="boutExperience">Details About Experience</label>
                                                     </div>
                                                 </div>
                                                 <div class="mb-4 pb-2">
                                                     <div class="form-outline">
-                                                        <input type="text" id="details" class="form-control form-control-lg" />
+                                                        <input onChange={(e) => handleInputChange(e)} type="text" id="details" class="form-control form-control-lg" />
                                                         <label class="form-label" for="details">Any Other Details</label>
                                                     </div>
                                                 </div>
                                                 <div class="mb-4 pb-2">
                                                     <div class="form-outline">
-                                                        <input type="text" id="password" class="form-control form-control-lg" />
+                                                        <input onChange={(e) => handleInputChange(e)} type="text" id="password" class="form-control form-control-lg" />
                                                         <label class="form-label" for="password">Password</label>
                                                     </div>
                                                 </div>
-                                                <button type="button" class="btn btn-success btn-lg"
-                                                    data-mdb-ripple-color="dark">Please Fill the Contact Details in Next form</button>
+                                                <button type="button" class="btn btn-outline-success btn-lg m-3"
+                                                    data-mdb-ripple-color="dark" onClick={()=>{navigate('/teacherlogin')}} >Already has Account ? Click for Login</button>    
                                             </div>
                                         </div>
                                         <div class="col-lg-6 bg-indigo text-white">
@@ -91,14 +205,14 @@ const TeacherSignup = () => {
 
                                                 <div class="mb-4 pb-2">
                                                     <div class="form-outline form-white">
-                                                        <input type="text" id="address" class="form-control form-control-lg" />
+                                                        <input onChange={(e) => handleInputChange(e)} type="text" id="address" class="form-control form-control-lg" />
                                                         <label class="form-label" for="address">Address</label>
                                                     </div>
                                                 </div>
 
                                                 <div class="mb-4 pb-2">
                                                     <div class="form-outline form-white">
-                                                        <input type="text" id="additionalInformation" class="form-control form-control-lg" />
+                                                        <input onChange={(e) => handleInputChange(e)} type="text" id="additionalInformation" class="form-control form-control-lg" />
                                                         <label class="form-label" for="additionalInformation">Additional Information</label>
                                                     </div>
                                                 </div>
@@ -107,7 +221,7 @@ const TeacherSignup = () => {
                                                     <div class="col-md-5 mb-4 pb-2">
 
                                                         <div class="form-outline form-white">
-                                                            <input type="text" id="country" class="form-control form-control-lg" />
+                                                            <input onChange={(e) => handleInputChange(e)} type="text" id="country" class="form-control form-control-lg" />
                                                             <label class="form-label" for="country">State/Country</label>
                                                         </div>
 
@@ -115,7 +229,7 @@ const TeacherSignup = () => {
                                                     <div class="col-md-7 mb-4 pb-2">
 
                                                         <div class="form-outline form-white">
-                                                            <input type="text" id="city" class="form-control form-control-lg" />
+                                                            <input onChange={(e) => handleInputChange(e)} type="text" id="city" class="form-control form-control-lg" />
                                                             <label class="form-label" for="city">City</label>
                                                         </div>
 
@@ -124,7 +238,7 @@ const TeacherSignup = () => {
 
                                                 <div class="mb-4 pb-2">
                                                     <div class="form-outline form-white">
-                                                        <input type="text" id="skypeId" class="form-control form-control-lg" />
+                                                        <input onChange={(e) => handleInputChange(e)} type="text" id="skypeId" class="form-control form-control-lg" />
                                                         <label class="form-label" for="skypeId">Skype ID</label>
                                                     </div>
                                                 </div>
@@ -133,15 +247,15 @@ const TeacherSignup = () => {
                                                     <div class="col-md-5 mb-4 pb-2">
 
                                                         <div class="form-outline form-white">
-                                                            <input type="text" id="code" class="form-control form-control-lg" />
-                                                            <label class="form-label" for="code">Code +</label>
+                                                            <input onChange={(e) => handleInputChange(e)} type="date" id="dob" class="form-control form-control-lg" />
+                                                            <label class="form-label" for="dob">DOB</label>
                                                         </div>
 
                                                     </div>
                                                     <div class="col-md-7 mb-4 pb-2">
 
                                                         <div class="form-outline form-white">
-                                                            <input type="text" id="number" class="form-control form-control-lg" />
+                                                            <input onChange={(e) => handleInputChange(e)} type="text" id="number" class="form-control form-control-lg" />
                                                             <label class="form-label" for="number">Phone Number</label>
                                                         </div>
 
@@ -150,13 +264,13 @@ const TeacherSignup = () => {
 
                                                 <div class="mb-4">
                                                     <div class="form-outline form-white">
-                                                        <input type="text" id="email" class="form-control form-control-lg" />
+                                                        <input onChange={(e) => handleInputChange(e)} type="text" id="email" class="form-control form-control-lg" />
                                                         <label class="form-label" for="email">Your Email</label>
                                                     </div>
                                                 </div>
 
                                                 <div class="form-check d-flex justify-content-start mb-4 pb-3">
-                                                    <input class="form-check-input me-3" type="checkbox" value="" id="form2Example3c" />
+                                                    <input onChange={(e) => handleInputChange(e)} class="form-check-input me-3" type="checkbox" value="" id="form2Example3c" />
                                                     <label class="form-check-label text-white" for="form2Example3">
                                                         I do accept the <a href="#!" class="text-white"><u>Terms and Conditions</u></a> of your
                                                         site.
@@ -164,7 +278,7 @@ const TeacherSignup = () => {
                                                 </div>
 
                                                 <button type="button" class="btn btn-success btn-lg"
-                                                    data-mdb-ripple-color="dark" onClick={()=>{navigate('/teacheraccount')}} >Register</button>
+                                                    data-mdb-ripple-color="dark" onClick={() => handleSubmit()} >Register</button>
 
                                             </div>
                                         </div>
