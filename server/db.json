@@ -1,0 +1,46 @@
+{
+  "student": [
+    {
+      "id": 1,
+      "firstName": "yousaf",
+      "lastName": "ramzan",
+      "FatherName": "Ramzan",
+      "Address": "Lahore",
+      "Gender": "male",
+      "DOB": "10-10-2000",
+      "state": "pakistan",
+      "city": "lahore",
+      "course": "quran",
+      "email": "yousaf@gmail.com",
+      "password": "1122"
+    },
+    {
+      "firstName": "as",
+      "lastName": "as",
+      "fatherName": "aas",
+      "address": "dfs",
+      "gender": "m",
+      "dob": null,
+      "state": "as",
+      "city": "as",
+      "course": "sd",
+      "email": "sd",
+      "password": "dsd",
+      "id": 2
+    },
+    {
+      "firstName": "bano",
+      "lastName": "banowe",
+      "fatherName": "lahore",
+      "address": null,
+      "gender": "qa",
+      "dob": null,
+      "state": null,
+      "city": null,
+      "course": null,
+      "email": null,
+      "password": null,
+      "id": 3
+    }
+  ]
+}
