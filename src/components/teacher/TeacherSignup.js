@@ -20,9 +20,9 @@ const TeacherSignup = () => {
                                                 <div class="mb-4 pb-2">
                                                     <select class="select">
                                                         <option value="1">Title</option>
-                                                        <option value="2">Two</option>
-                                                        <option value="3">Three</option>
-                                                        <option value="4">Four</option>
+                                                        <option value="2">Quran Teacher</option>
+                                                        <option value="3">Islamic Teacher</option>
+                                                        <option value="4">Molana sb</option>
                                                     </select>
                                                 </div>
 
@@ -30,58 +30,59 @@ const TeacherSignup = () => {
                                                     <div class="col-md-6 mb-4 pb-2">
 
                                                         <div class="form-outline">
-                                                            <input type="text" id="form3Examplev2" class="form-control form-control-lg" />
-                                                            <label class="form-label" for="form3Examplev2">First name</label>
+                                                            <input type="text" id="firstName" class="form-control form-control-lg" />
+                                                            <label class="form-label" for="firstName">First name</label>
                                                         </div>
 
                                                     </div>
                                                     <div class="col-md-6 mb-4 pb-2">
 
                                                         <div class="form-outline">
-                                                            <input type="text" id="form3Examplev3" class="form-control form-control-lg" />
-                                                            <label class="form-label" for="form3Examplev3">Last name</label>
+                                                            <input type="text" id="lastName" class="form-control form-control-lg" />
+                                                            <label class="form-label" for="lastName">Last name</label>
                                                         </div>
 
+                                                    </div>
+                                                </div>
+                                                <div class="mb-4 pb-2">
+                                                    <div class="form-outline">
+                                                        <input type="text" id="fatherName" class="form-control form-control-lg" />
+                                                        <label class="form-label" for="fatherName">Father Name</label>
                                                     </div>
                                                 </div>
 
                                                 <div class="mb-4 pb-2">
                                                     <select class="select">
-                                                        <option value="1">Position</option>
-                                                        <option value="2">Two</option>
-                                                        <option value="3">Three</option>
-                                                        <option value="4">Four</option>
+                                                        <option value="1">Experience</option>
+                                                        <option value="2">Six months</option>
+                                                        <option value="3">Six Months Plus</option>
+                                                        <option value="4">One Year</option>
+                                                        <option value="5">One Year Plus</option>
+                                                        <option value="6">Two Year</option>
+                                                        <option value="7">Two Year Plus</option>
                                                     </select>
                                                 </div>
 
                                                 <div class="mb-4 pb-2">
                                                     <div class="form-outline">
-                                                        <input type="text" id="form3Examplev4" class="form-control form-control-lg" />
-                                                        <label class="form-label" for="form3Examplev4">Position</label>
+                                                        <input type="text" id="boutExperience" class="form-control form-control-lg" />
+                                                        <label class="form-label" for="boutExperience">Details About Experience</label>
                                                     </div>
                                                 </div>
-
-                                                <div class="row">
-                                                    <div class="col-md-6 mb-4 pb-2 mb-md-0 pb-md-0">
-
-                                                        <div class="form-outline">
-                                                            <input type="text" id="form3Examplev5" class="form-control form-control-lg" />
-                                                            <label class="form-label" for="form3Examplev5">Bussines Arena</label>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="col-md-6">
-
-                                                        <select class="select">
-                                                            <option value="1">Employees</option>
-                                                            <option value="2">Two</option>
-                                                            <option value="3">Three</option>
-                                                            <option value="4">Four</option>
-                                                        </select>
-
+                                                <div class="mb-4 pb-2">
+                                                    <div class="form-outline">
+                                                        <input type="text" id="details" class="form-control form-control-lg" />
+                                                        <label class="form-label" for="details">Any Other Details</label>
                                                     </div>
                                                 </div>
-
+                                                <div class="mb-4 pb-2">
+                                                    <div class="form-outline">
+                                                        <input type="text" id="password" class="form-control form-control-lg" />
+                                                        <label class="form-label" for="password">Password</label>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn btn-success btn-lg"
+                                                    data-mdb-ripple-color="dark">Please Fill the Contact Details in Next form</button>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 bg-indigo text-white">
@@ -90,15 +91,15 @@ const TeacherSignup = () => {
 
                                                 <div class="mb-4 pb-2">
                                                     <div class="form-outline form-white">
-                                                        <input type="text" id="form3Examplea2" class="form-control form-control-lg" />
-                                                        <label class="form-label" for="form3Examplea2">Street + Nr</label>
+                                                        <input type="text" id="address" class="form-control form-control-lg" />
+                                                        <label class="form-label" for="address">Address</label>
                                                     </div>
                                                 </div>
 
                                                 <div class="mb-4 pb-2">
                                                     <div class="form-outline form-white">
-                                                        <input type="text" id="form3Examplea3" class="form-control form-control-lg" />
-                                                        <label class="form-label" for="form3Examplea3">Additional Information</label>
+                                                        <input type="text" id="additionalInformation" class="form-control form-control-lg" />
+                                                        <label class="form-label" for="additionalInformation">Additional Information</label>
                                                     </div>
                                                 </div>
 
@@ -106,16 +107,16 @@ const TeacherSignup = () => {
                                                     <div class="col-md-5 mb-4 pb-2">
 
                                                         <div class="form-outline form-white">
-                                                            <input type="text" id="form3Examplea4" class="form-control form-control-lg" />
-                                                            <label class="form-label" for="form3Examplea4">Zip Code</label>
+                                                            <input type="text" id="country" class="form-control form-control-lg" />
+                                                            <label class="form-label" for="country">State/Country</label>
                                                         </div>
 
                                                     </div>
                                                     <div class="col-md-7 mb-4 pb-2">
 
                                                         <div class="form-outline form-white">
-                                                            <input type="text" id="form3Examplea5" class="form-control form-control-lg" />
-                                                            <label class="form-label" for="form3Examplea5">Place</label>
+                                                            <input type="text" id="city" class="form-control form-control-lg" />
+                                                            <label class="form-label" for="city">City</label>
                                                         </div>
 
                                                     </div>
@@ -123,8 +124,8 @@ const TeacherSignup = () => {
 
                                                 <div class="mb-4 pb-2">
                                                     <div class="form-outline form-white">
-                                                        <input type="text" id="form3Examplea6" class="form-control form-control-lg" />
-                                                        <label class="form-label" for="form3Examplea6">Country</label>
+                                                        <input type="text" id="skypeId" class="form-control form-control-lg" />
+                                                        <label class="form-label" for="skypeId">Skype ID</label>
                                                     </div>
                                                 </div>
 
@@ -132,16 +133,16 @@ const TeacherSignup = () => {
                                                     <div class="col-md-5 mb-4 pb-2">
 
                                                         <div class="form-outline form-white">
-                                                            <input type="text" id="form3Examplea7" class="form-control form-control-lg" />
-                                                            <label class="form-label" for="form3Examplea7">Code +</label>
+                                                            <input type="text" id="code" class="form-control form-control-lg" />
+                                                            <label class="form-label" for="code">Code +</label>
                                                         </div>
 
                                                     </div>
                                                     <div class="col-md-7 mb-4 pb-2">
 
                                                         <div class="form-outline form-white">
-                                                            <input type="text" id="form3Examplea8" class="form-control form-control-lg" />
-                                                            <label class="form-label" for="form3Examplea8">Phone Number</label>
+                                                            <input type="text" id="number" class="form-control form-control-lg" />
+                                                            <label class="form-label" for="number">Phone Number</label>
                                                         </div>
 
                                                     </div>
@@ -149,8 +150,8 @@ const TeacherSignup = () => {
 
                                                 <div class="mb-4">
                                                     <div class="form-outline form-white">
-                                                        <input type="text" id="form3Examplea9" class="form-control form-control-lg" />
-                                                        <label class="form-label" for="form3Examplea9">Your Email</label>
+                                                        <input type="text" id="email" class="form-control form-control-lg" />
+                                                        <label class="form-label" for="email">Your Email</label>
                                                     </div>
                                                 </div>
 
@@ -162,7 +163,7 @@ const TeacherSignup = () => {
                                                     </label>
                                                 </div>
 
-                                                <button type="button" class="btn btn-light btn-lg"
+                                                <button type="button" class="btn btn-success btn-lg"
                                                     data-mdb-ripple-color="dark" onClick={()=>{navigate('/teacheraccount')}} >Register</button>
 
                                             </div>

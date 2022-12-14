@@ -87,9 +87,10 @@ const StudentSignUp = () => {
                         <div class="card card-registration my-4">
                             <div class="row g-0">
                                 <div class="col-xl-6 d-none d-xl-block">
-                                    {/* <img src="signup.png" */}
-                                        {/* alt="Sample photo" class="img-fluid" */}
-                                        {/* style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" /> */}
+                                     <img src="https://images.unsplash.com/photo-1537181534458-45dcee76ae90?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
+                                         alt="Sample" class="img-fluid" height="800px" 
+                                         style={{borderTopLeftRadius: ".25rem"}}/>
+                                         {/* style={{borderBottomLeftRadius: ".25rem"}}  */}
                                 </div>
                                 <div class="col-xl-6">
                                     <div class="card-body p-md-5 text-black">
@@ -132,7 +133,7 @@ const StudentSignUp = () => {
                                             </div>
                                             <div class="col-md-6 mb-4">
                                                 <div class="form-outline">
-                                                    <input onChange={(e) => handleInputChange(e)} type="date" id="gender" class="form-control form-control-lg" />
+                                                    <input onChange={(e) => handleInputChange(e)} type="date" id="dob" class="form-control form-control-lg" />
                                                     <label class="form-label" for="form3Example1n">DOB</label>
                                                 </div>
                                             </div>
@@ -167,7 +168,7 @@ const StudentSignUp = () => {
                                         </div>
 
                                         <div class="d-flex justify-content-end pt-3">
-                                            <button type="button" class="btn btn-light btn-lg">Reset all</button>
+                                            <button type="button" class="btn btn-outline-success btn-lg">Reset all</button>
                                             <button type="button" class="btn btn-success btn-lg ms-2" onClick={() => handleSubmit()} >Submit form</button>
                                         </div>
                                         <div class="d-flex justify-content-end pt-3">

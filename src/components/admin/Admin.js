@@ -1,9 +1,9 @@
-import { useNavigate } from "react-router-dom"
+// import { useNavigate } from "react-router-dom"
 
 
 const Admin = ()=>{
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     return(
         <div>
             <h1>Admin</h1>

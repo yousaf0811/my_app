@@ -15,32 +15,68 @@
       "password": "1122"
     },
     {
-      "firstName": "as",
-      "lastName": "as",
-      "fatherName": "aas",
-      "address": "dfs",
-      "gender": "m",
+      "firstName": "Malik",
+      "lastName": "Rashid",
+      "fatherName": "Malik Ashiq",
+      "address": "Green Town",
+      "gender": "2022-12-15",
       "dob": null,
-      "state": "as",
-      "city": "as",
-      "course": "sd",
-      "email": "sd",
-      "password": "dsd",
-      "id": 2
+      "state": "Pakistan",
+      "city": "Lahore",
+      "course": "Quran Teacher",
+      "email": "rashid@gmail.com",
+      "password": "rashid",
+      "id": 4
     },
     {
-      "firstName": "bano",
-      "lastName": "banowe",
-      "fatherName": "lahore",
-      "address": null,
-      "gender": "qa",
+      "firstName": "malik",
+      "lastName": "goda",
+      "fatherName": "Malik Ashiq",
+      "address": "green town",
+      "gender": "2022-12-28",
       "dob": null,
-      "state": null,
-      "city": null,
-      "course": null,
-      "email": null,
-      "password": null,
-      "id": 3
+      "state": "Pakistan",
+      "city": "Lahore",
+      "course": "Quran teaching",
+      "email": "goda@gmail.com",
+      "password": "goda",
+      "id": 5
+    },
+    {
+      "firstName": "Muhammad Yousaf",
+      "lastName": "Ramzan",
+      "fatherName": "ramzan",
+      "address": "Basti Sharif, Near the sui nothern gas, Uch sharif",
+      "gender": "male",
+      "dob": "2022-12-21",
+      "state": "Pakistan",
+      "city": "Uch Sharif",
+      "course": "Quran Teacher",
+      "email": "yousaf@gmail.com",
+      "password": "asdf",
+      "id": 6
+    }
+  ],
+  "teachers": [
+    {
+        "id":1,
+        "title":"Qari",
+      "firstName": "Malik",
+      "lastName": "Rashid",
+        "fatherName":"Ashiq",
+        "experience":"Six Months",
+        "aboutExperience":"Clear",
+        "details":"Nothing",
+        "password":"12345",
+        "address":"Lahore",
+        "additionalInformation":"Nothing",
+        "country":"Pakistan",
+        "city":"Lahore",
+        "skypeId":"yousaf0811",
+        "code":"+92",
+        "number":"30220406376",
+        "email":"yousaf@gmail.com"
+
     }
   ]
 }
