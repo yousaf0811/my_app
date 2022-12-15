@@ -13,6 +13,7 @@ import TeacherAccount from './components/teacher/TeacherAccount';
 import Admin from './components/admin/Admin';
 import Home from './components/Home';
 import Auth from './components/Auth';
+import Admin_home from './components/admin/admin_home';
 function App() {
   return (
     <div className="App">
@@ -30,6 +31,7 @@ function App() {
       <Route path="/teacherEdit" element={<TeacherEdit/> } />
       <Route path="/teacherquery" element={<TeacherQuery/> } />
       <Route path="/teacherAccount" element={<Auth><TeacherAccount/></Auth> } />
+      <Route path="/adminHome" element={<Auth><Admin_home/></Auth> } />
       </Routes>
       </BrowserRouter>
     </div>

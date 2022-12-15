@@ -123,7 +123,7 @@ const StudentSignUp = () => {
                     </div>
                 </div>
             </nav>
-        <section class="h-100 h-101" style={{backgroundColor:"lightgreen"}}>
+        <section class="h-100 h-101" style={{backgroundColor:"lightgray"}}>
             <div class="container py-5 h-100">
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="col">
