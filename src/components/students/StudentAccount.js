@@ -1,9 +1,9 @@
-import { useNavigate } from "react-router-dom"
+// import { useNavigate } from "react-router-dom"
 
 
 const StudentAccount = ()=>{
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const handleLogOut = () => {
         localStorage.clear();
