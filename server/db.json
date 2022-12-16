@@ -55,6 +55,20 @@
       "email": "yousaf@gmail.com",
       "password": "asdf",
       "id": 6
+    },
+    {
+      "firstName": "Muhammad Yousaf",
+      "lastName": "Ramzan",
+      "fatherName": "Malik Ashiq",
+      "address": "Basti Sharif, Near the sui nothern gas, Uch sharif",
+      "gender": "male",
+      "dob": null,
+      "state": "Pakistan",
+      "city": "Uch Sharif",
+      "course": "sd",
+      "email": "rashid.4969423@gmail.com",
+      "password": "12345",
+      "id": 7
     }
   ],
   "teachers": [
@@ -98,10 +112,10 @@
       "id": 2
     }
   ],
-  "admin":[
+  "admin": [
     {
-      "email":"admin@gmail.com",
-      "password":"12345"
+      "email": "admin@gmail.com",
+      "password": "12345"
     }
   ]
 }

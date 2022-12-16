@@ -32,7 +32,7 @@ const Home = () => {
                     <div class="collapse navbar-collapse" id="navbarButtonsExample">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link" href="/">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">About</a>
@@ -43,18 +43,18 @@ const Home = () => {
                         </ul>
                         
                         <div class="d-flex align-items-center">
-                            <button type="button" class="btn btn-outline-success px-3 me-2" onClick={() => { navigate('/studentlogin') }} >
+                            <button type="button" class="btn btn-success px-3 me-2" onClick={() => { navigate('/studentlogin') }} >
                                 Login for Student
                             </button>
-                            <button type="button" class="btn btn-success me-3" onClick={() => { navigate('/studentsignup') }} >
+                            {/* <button type="button" class="btn btn-success me-3" onClick={() => { navigate('/studentsignup') }} >
                                 Sign up for Student
-                            </button>
-                            <button type="button" class="btn btn-outline-success px-3 me-2" onClick={() => { navigate('/teacherlogin') }} >
+                            </button> */}
+                            <button type="button" class="btn btn-warning px-3 me-2" onClick={() => { navigate('/teacherlogin') }} >
                                 Login for Teacher
                             </button>
-                            <button type="button" class="btn btn-success me-3" onClick={() => { navigate('/teachersignup') }} >
+                            {/* <button type="button" class="btn btn-success me-3" onClick={() => { navigate('/teachersignup') }} >
                                 Sign up for Teacher
-                            </button>
+                            </button> */}
                         </div>
                     </div>
                 </div>

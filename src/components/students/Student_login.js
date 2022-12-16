@@ -4,11 +4,10 @@ import { useState } from "react";
 
 const StudentLogin = () => {
 
+    const [specificId,setSpecificId] = useState(null);
+
     const [database, setDatabase] = useState([]);
     const navigate = useNavigate();
-    const handleClick = () => {
-        navigate("/studentaccount");
-    };
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -21,6 +20,8 @@ const StudentLogin = () => {
             } else {
                 localStorage.setItem("name", JSON.stringify(userData.firstName));
                 localStorage.setItem("id", JSON.stringify(userData.id));
+                setSpecificId(userData.id)
+                console.log(userData.id)
                 handleClick();
             }
         } else {
@@ -31,6 +32,9 @@ const StudentLogin = () => {
             alert("Fill the empty input fields");
             return false;
         }
+    };
+    const handleClick = () => {
+        navigate(`/studentaccount/${specificId}`)
     };
     useEffect(() => {
         let localData = localStorage.getItem("name");
